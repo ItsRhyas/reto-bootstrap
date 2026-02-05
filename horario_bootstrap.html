@@ -11,26 +11,22 @@
   </head>
   <body>
     <nav class="navbar bg-dark text-white">
-      <div class="container">
-        <div class="row">
-          <span class="col-4 text-start">SIU-WEB</span>
-          <span class="col-4 text-center">SISTEMA ACADEMICO DOCENTE</span>
-          <span class="col-4 text-end"
-            >Usuario: A. Cisneros Período: 2026-I</span
-          >
+      <div class="container-fluid">
+        <div class="row w-100 align-items-center m-0">
+          <div class="col text-start">SIU-WEB</div>
+          <div class="col text-center d-none d-sm-inline">
+            SISTEMA ACADÉMICO DOCENTE
+          </div>
+          <div class="col text-end">Período: 2026-I</div>
         </div>
       </div>
     </nav>
+
     <h4 class="text-center m-4">Reporte oficial de horarios</h4>
 
     <div class="container">
-      <div class="text-end m-2 me-0">
-        <button class="btn btn-primary">Imprimir</button>
-        <button class="btn btn-secondary">Exportar a EXCEL</button>
-        <button class="btn btn-outline-danger">Cerrar Sesion</button>
-      </div>
       <div class="table-responsive">
-        <table class="table table-bordered table-striped table-hover">
+        <table class="table table-striped">
           <thead class="table-dark">
             <tr>
               <th scope="col">CÓDIGO</th>
@@ -68,6 +64,15 @@
             </tr>
           </tbody>
         </table>
+      </div>
+      <div class="text-end m-2 me-0">
+        <button class="btn btn-primary fs-6 fs-md-5 mb-2">Imprimir</button>
+        <button class="btn btn-secondary fs-6 fs-md-5 mb-2">
+          Exportar a EXCEL
+        </button>
+        <button class="btn btn-outline-danger fs-6 fs-md-5 mb-2">
+          Cerrar Sesion
+        </button>
       </div>
     </div>
   </body>
