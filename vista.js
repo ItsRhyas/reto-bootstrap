@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+  //Inicializar Popovers
+  const popoverTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="popover"]',
+  );
+  const popoverList = [...popoverTriggerList].map(
+    (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl),
+  );
+
   const listaSection = document.getElementById("lista");
   const calendarioSection = document.getElementById("calendario-vista");
   const btnLista = document.getElementById("btnLista");
@@ -30,7 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
     btnLista.setAttribute("aria-pressed", "false");
   };
 
-  // Default view: Lista
   showLista();
 
   btnLista.addEventListener("click", (e) => {
