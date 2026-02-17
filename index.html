@@ -8,6 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link
       rel="icon"
       type="image/png"
@@ -59,16 +60,16 @@
               <tbody class="small">
                 <tr>
                   <th scope="row" class="ps-3">0413</th>
-                  <td class="fw-bold">PROGRAMACIÓN WEB</td>
-                  <td>Gpo1</td>
+                  <td>PROGRAMACIÓN WEB</td>
+                  <td><span class="badge bg-primary">Gpo1</span></td>
                   <td>MARTES</td>
                   <td>10:00 - 11:40</td>
                   <td><span class="badge bg-primary">E201</span></td>
                 </tr>
                 <tr>
                   <th scope="row" class="ps-3">0413</th>
-                  <td class="fw-bold">PROGRAMACIÓN WEB</td>
-                  <td>Gpo1</td>
+                  <td>PROGRAMACIÓN WEB</td>
+                  <td><span class="badge bg-primary">Gpo1</span></td>
                   <td>JUEVES</td>
                   <td>15:00 - 16:40</td>
                   <td><span class="badge bg-primary">E201</span></td>
@@ -76,7 +77,7 @@
                 <tr>
                   <th scope="row" class="ps-3">0402</th>
                   <td>INTRO. INGENIERÍA</td>
-                  <td>Gpo3</td>
+                  <td><span class="badge bg-secondary">Gpo3</span></td>
                   <td>LUNES</td>
                   <td>08:00 - 09:40</td>
                   <td><span class="badge bg-secondary">D104</span></td>
@@ -84,7 +85,7 @@
                 <tr>
                   <th scope="row" class="ps-3">0402</th>
                   <td>INTRO. INGENIERÍA</td>
-                  <td>Gpo3</td>
+                  <td><span class="badge bg-secondary">Gpo3</span></td>
                   <td>MIÉRCOLES</td>
                   <td>08:00 - 09:40</td>
                   <td><span class="badge bg-secondary">D104</span></td>
@@ -92,23 +93,23 @@
                 <tr>
                   <th scope="row" class="ps-3">0402</th>
                   <td>INTRO. INGENIERÍA</td>
-                  <td>Gpo4</td>
+                  <td><span class="badge bg-warning">Gpo4</span></td>
                   <td>LUNES</td>
                   <td>10:00 - 11:40</td>
-                  <td><span class="badge bg-secondary">E201</span></td>
+                  <td><span class="badge bg-primary">E201</span></td>
                 </tr>
                 <tr>
                   <th scope="row" class="ps-3">0402</th>
                   <td>INTRO. INGENIERÍA</td>
-                  <td>Gpo4</td>
+                  <td><span class="badge bg-warning">Gpo4</span></td>
                   <td>JUEVES</td>
                   <td>08:00 - 09:40</td>
-                  <td><span class="badge bg-secondary">E201</span></td>
+                  <td><span class="badge bg-primary">E201</span></td>
                 </tr>
                 <tr>
                   <th scope="row" class="ps-3">0402</th>
                   <td>INTRO. INGENIERÍA</td>
-                  <td>Gpo7</td>
+                  <td><span class="badge bg-success">Gpo7</span></td>
                   <td>LUNES</td>
                   <td>03:00 - 04:40</td>
                   <td><span class="badge bg-secondary">D104</span></td>
@@ -116,7 +117,7 @@
                 <tr>
                   <th scope="row" class="ps-3">0402</th>
                   <td>INTRO. INGENIERÍA</td>
-                  <td>Gpo7</td>
+                  <td><span class="badge bg-success">Gpo7</span></td>
                   <td>JUEVES</td>
                   <td>01:00 - 02:40</td>
                   <td><span class="badge bg-secondary">D104</span></td>
@@ -124,7 +125,7 @@
                 <tr>
                   <th scope="row" class="ps-3">0402</th>
                   <td>INTRO. INGENIERÍA</td>
-                  <td>Gpo8</td>
+                  <td><span class="badge bg-danger">Gpo8</span></td>
                   <td>MARTES</td>
                   <td>03:00 - 04:40</td>
                   <td><span class="badge bg-secondary">D104</span></td>
@@ -132,7 +133,7 @@
                 <tr>
                   <th scope="row" class="ps-3">0402</th>
                   <td>INTRO. INGENIERÍA</td>
-                  <td>Gpo8</td>
+                  <td><span class="badge bg-danger">Gpo8</span></td>
                   <td>MIÉRCOLES</td>
                   <td>01:00 - 02:40</td>
                   <td><span class="badge bg-secondary">D104</span></td>
@@ -145,21 +146,15 @@
 
       <section
         id="calendario-vista"
-        class="table-responsive d-none"
+        class="card table-responsive d-none rounded"
         aria-labelledby="calendario-title"
         aria-hidden="true"
       >
-        <h2 id="calendario-title" class="visually-hidden">
-          Calendario semanal
-        </h2>
         <!-- Lo siento profe, no pude hacer el  "table-layout: fixed" sin css-->
         <table
-          style="table-layout: fixed; min-width: 50rem"
-          class="table text-center"
+          style="table-layout: fixed; min-width: 60rem"
+          class="table text-center m-0"
         >
-          <caption class="text-center fw-semibold">
-            Calendario semanal
-          </caption>
           <thead>
             <tr>
               <th scope="col" class="text-start">Hora</th>
@@ -177,26 +172,41 @@
                 <time datetime="08:00">8:00am</time>
               </th>
               <td>
-                <article class="bg-primary rounded text-light">
-                  Intro. Ingenieria <br />
-                  0402 <br />
-                  (Gpo3) - Aula D104
-                </article>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-primary w-100 p-sm-2 fs-6 fs-sm-1 h-100"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="focus"
+                  title="Introduccion a la Ingenieria"
+                  data-bs-content="Aula: D104, Codigo: 0402, Grupo: Gpo4"
+                >
+                  Intro. Ingenieria
+                </button>
               </td>
               <td></td>
               <td>
-                <article class="bg-primary rounded text-light">
-                  Intro. Ingenieria <br />
-                  0402 <br />
-                  (Gpo3) - Aula D104
-                </article>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-primary w-100 p-sm-2 fs-6 fs-sm-1 h-100"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="focus"
+                  title="Introduccion a la Ingenieria"
+                  data-bs-content="Aula: D104, Codigo: 0402, Grupo: Gpo3"
+                >
+                  Intro. Ingenieria
+                </button>
               </td>
               <td>
-                <article class="bg-primary rounded text-light">
-                  Intro. Ingenieria <br />
-                  0402 <br />
-                  (Gpo4) - Aula E201
-                </article>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-primary w-100 p-sm-2 fs-6 fs-sm-1 h-100"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="focus"
+                  title="Introduccion a la Ingenieria"
+                  data-bs-content="Aula: D104, Codigo: 0402, Grupo: Gpo4"
+                >
+                  Intro. Ingenieria
+                </button>
               </td>
               <td></td>
               <td></td>
@@ -206,18 +216,28 @@
                 <time datetime="10:00">10:00am</time>
               </th>
               <td>
-                <article class="bg-primary rounded text-light">
-                  Intro. Ingenieria <br />
-                  0402 <br />
-                  (Gpo4) - Aula E201
-                </article>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-primary w-100 p-sm-2 fs-6 fs-sm-1 h-100"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="focus"
+                  title="Introduccion a la Ingenieria"
+                  data-bs-content="Aula: E201, Codigo: 0402, Grupo: Gpo4"
+                >
+                  Intro. Ingenieria
+                </button>
               </td>
               <td>
-                <article class="bg-primary rounded text-light">
-                  Programacion Web <br />
-                  0413 <br />
-                  (Gpo4) - Aula E201
-                </article>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-danger w-100 p-sm-2 fs-6 fs-sm-1 h-100"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="focus"
+                  title="Programacion Web"
+                  data-bs-content="Aula: E201, Codigo: 0413, Grupo: Gpo4"
+                >
+                  Programacion Web
+                </button>
               </td>
               <td></td>
               <td></td>
@@ -231,18 +251,28 @@
               <td></td>
               <td></td>
               <td>
-                <article class="bg-primary rounded text-light">
-                  Intro. Ingenieria <br />
-                  0402 <br />
-                  (Gpo8) - Aula D104
-                </article>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-primary w-100 p-sm-2 fs-6 fs-sm-1 h-100"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="focus"
+                  title="Introduccion a la Ingenieria"
+                  data-bs-content="Aula: D104, Codigo: 0402, Grupo: Gpo8"
+                >
+                  Intro. Ingenieria
+                </button>
               </td>
               <td>
-                <article class="bg-primary rounded text-light">
-                  Intro. Ingenieria <br />
-                  0402 <br />
-                  (Gpo7) - Aula D104
-                </article>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-primary w-100 p-sm-2 fs-6 fs-sm-1 h-100"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="focus"
+                  title="Introduccion a la Ingenieria"
+                  data-bs-content="Aula: D104, Codigo: 0402, Grupo: Gpo7"
+                >
+                  Intro. Ingenieria
+                </button>
               </td>
               <td></td>
               <td></td>
@@ -252,26 +282,41 @@
                 <time datetime="15:00">3:00pm</time>
               </th>
               <td>
-                <article class="bg-primary rounded text-light">
-                  Intro. Ingenieria <br />
-                  0402 <br />
-                  D104
-                </article>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-primary w-100 p-sm-2 fs-6 fs-sm-1 h-100"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="focus"
+                  title="Introduccion a la Ingenieria"
+                  data-bs-content="Aula: D104, Codigo: 0402, Grupo: Gpo7"
+                >
+                  Intro. Ingenieria
+                </button>
               </td>
               <td>
-                <article class="bg-primary rounded text-light">
-                  Intro. Ingenieria <br />
-                  0402 <br />
-                  (Gpo8) - Aula D104
-                </article>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-primary w-100 p-sm-2 fs-6 fs-sm-1 h-100"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="focus"
+                  title="Introduccion a la Ingenieria"
+                  data-bs-content="Aula: D104, Codigo: 0402, Grupo: Gpo8"
+                >
+                  Intro. Ingenieria
+                </button>
               </td>
               <td></td>
               <td>
-                <article class="bg-primary rounded text-light">
-                  Programacion Web <br />
-                  0413 <br />
-                  (Gpo4) - Aula E201
-                </article>
+                <button
+                  type="button"
+                  class="btn btn-lg btn-danger w-100 p-sm-2 fs-6 fs-sm-1 h-100"
+                  data-bs-toggle="popover"
+                  data-bs-trigger="focus"
+                  title="Programacion Web"
+                  data-bs-content="Aula: E201, Codigo: 0413, Grupo: Gpo8"
+                >
+                  Programacion Web
+                </button>
               </td>
               <td></td>
               <td></td>
