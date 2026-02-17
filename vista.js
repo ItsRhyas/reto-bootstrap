@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btnLista.setAttribute("aria-pressed", "false");
   };
 
-  showLista();
+  showCalendario();
 
   btnLista.addEventListener("click", (e) => {
     e.preventDefault();
